@@ -351,3 +351,8 @@ docker container run --name from-tar -it vi-ubuntu:import
   + 여러 이미지들을 저장하는 컨셉, 기술적 난이도 : medium
   
 - 명령어 : docker image load (불러오기)
+
+# 이미지 전체 삭제
+```bash
+docker image rm -f$(docker images -q)
+```
